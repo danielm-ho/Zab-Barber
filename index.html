@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zab Hair Studio — Roman Zablotskyi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a class="nav-logo" onclick="go('home')">ZAB<span class="dot">.</span></a>
+  <div class="nav-c">
+    <a class="nav-link on" data-page="home" onclick="go('home')">Home</a>
+    <a class="nav-link" data-page="about" onclick="go('about')">About</a>
+    <a class="nav-link" data-page="services" onclick="go('services')">Services</a>
+    <a class="nav-link" data-page="coaching" onclick="go('coaching')">Coaching</a>
+    <a class="nav-link" data-page="media" onclick="go('media')">Media</a>
+    <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+  </div>
+  <button class="burger" id="burg" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="nav-mob" id="navmob">
+  <a class="nav-link" data-page="home" onclick="go('home');closeMob()">Home</a>
+  <a class="nav-link" data-page="about" onclick="go('about');closeMob()">About</a>
+  <a class="nav-link" data-page="services" onclick="go('services');closeMob()">Services</a>
+  <a class="nav-link" data-page="coaching" onclick="go('coaching');closeMob()">Coaching</a>
+  <a class="nav-link" data-page="media" onclick="go('media');closeMob()">Media</a>
+  <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+</div>
+
+<!-- ════════════════════════════════
+     HOME PAGE
+════════════════════════════════ -->
+<div id="pg-home" class="pg on">
+
+  <!-- HERO -->
+  <div class="hm-hero">
+    <div class="hm-hero-txt">
+      <p class="hm-eyebrow">Newtown Square · Main Line, PA</p>
+      <h1 class="hm-headline">Sharp.<br>Every Time.</h1>
+      <p class="hm-sub">Precision fades, clean tapers, and beard work done right — by a barber who treats every cut like it's the only one that matters.</p>
+      <div class="hm-ctas">
+        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book a Cut</a>
+        <button class="btn-out" onclick="scrollToWork()">See the Work</button>
+      </div>
+    </div>
+    <div class="shot hm-hero-shot" data-photo="fig01">
+      <div class="shot-tag">FIG. 01<small>Roman, in the chair — photo TBD</small></div>
+    </div>
+    <button class="scroll-cue" onclick="scrollToWork()" aria-label="Scroll to see the work">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="hm-trust">
+    <div class="hm-trust-cell">
+      <span class="hm-trust-num">7</span>
+      <span class="hm-trust-lbl">Years Cutting</span>
+    </div>
+    <div class="hm-trust-cell">
+      <span class="hm-trust-num">15,000+</span>
+      <span class="hm-trust-lbl">Clients Served</span>
+    </div>
+    <div class="hm-trust-cell">
+      <span class="hm-trust-num">Main Line</span>
+      <span class="hm-trust-lbl">Newtown Square, PA</span>
+    </div>
+    <div class="hm-trust-cell">
+      <span class="hm-trust-num">Solo</span>
+      <span class="hm-trust-lbl">One Chair, One Barber</span>
+    </div>
+  </div>
+
+  <!-- FEATURED WORK -->
+  <div class="hm-sect" id="hm-gallery" style="scroll-margin-top:var(--nh)">
+    <div class="hm-sect-head">
+      <div>
+        <p class="eyebrow">The Work</p>
+        <h2 class="disp disp-lg">Featured Cuts</h2>
+      </div>
+      <p class="hm-sect-sub">A look at what actually happens in the chair — not stock photos, real work.</p>
+    </div>
+    <div class="hm-gal-grid">
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig02"><div class="shot-tag">FIG. 02<small>Skin Fade — photo TBD</small></div></div>
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig03"><div class="shot-tag">FIG. 03<small>French Crop + Taper — photo TBD</small></div></div>
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig04"><div class="shot-tag">FIG. 04<small>Side Part — photo TBD</small></div></div>
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig05"><div class="shot-tag">FIG. 05<small>Beard Trim &amp; Line-Up — photo TBD</small></div></div>
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig06"><div class="shot-tag">FIG. 06<small>Shear Work — photo TBD</small></div></div>
+      <div class="shot shot--tall hm-gal-cell" data-photo="fig07"><div class="shot-tag">FIG. 07<small>Hot Towel Shave — photo TBD</small></div></div>
+    </div>
+    <div style="margin-top:2.2rem;display:flex;gap:1rem;flex-wrap:wrap">
+      <a class="btn-out" onclick="go('services')">View All Services →</a>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <div class="hm-sect">
+    <div class="hm-sect-head">
+      <div>
+        <p class="eyebrow">Why Clients Come Back</p>
+        <h2 class="disp disp-lg">The Standard</h2>
+      </div>
+    </div>
+    <div class="hm-why-list">
+      <div class="hm-why-row">
+        <div class="hm-why-lbl">
+          <p class="hm-why-eye">Detail-Driven</p>
+          <h3 class="hm-why-h">Nothing Overlooked</h3>
+        </div>
+        <p class="hm-why-p">Roman's focus is on the details most barbers skip — the parts of a cut that decide whether it actually holds up.</p>
+      </div>
+      <div class="hm-why-row">
+        <div class="hm-why-lbl">
+          <p class="hm-why-eye">European-Trained</p>
+          <h3 class="hm-why-h">Old-World Technique</h3>
+        </div>
+        <p class="hm-why-p">His approach comes from European barbering — a different standard of precision than most shops here are built around.</p>
+      </div>
+      <div class="hm-why-row">
+        <div class="hm-why-lbl">
+          <p class="hm-why-eye">Shear-First</p>
+          <h3 class="hm-why-h">Built With Shears</h3>
+        </div>
+        <p class="hm-why-p">Most barbers lean on clippers for everything. Roman works with shears for the texture and shape clippers alone can't give you.</p>
+      </div>
+      <div class="hm-why-row">
+        <div class="hm-why-lbl">
+          <p class="hm-why-eye">Solo-Operated</p>
+          <h3 class="hm-why-h">Always Roman</h3>
+        </div>
+        <p class="hm-why-p">One chair, one barber. No junior associate, no rotating staff — every client gets the same hands, every time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="hm-sect">
+    <div class="hm-sect-head">
+      <div>
+        <p class="eyebrow">What Clients Say</p>
+        <h2 class="disp disp-lg">Social Proof</h2>
+      </div>
+    </div>
+    <div class="hm-rev-top">
+      <span class="rev-pending-badge">Google Reviews — Coming Soon</span>
+    </div>
+    <p class="hm-sect-sub" style="margin-bottom:2.4rem">15,000+ clients on the Main Line — including professional athletes (NBA, MLS) and touring musicians.</p>
+    <div class="hm-rev-grid">
+      <div class="hm-rev-card" data-review="0">
+        <span class="sv-card-tag">Pending</span>
+        <p class="hm-rev-quote">"Review quote to be added — pull a real one once Roman shares client feedback."</p>
+        <p class="hm-rev-name">— Client Name, TBD</p>
+      </div>
+      <div class="hm-rev-card" data-review="1">
+        <span class="sv-card-tag">Pending</span>
+        <p class="hm-rev-quote">"Review quote to be added — pull a real one once Roman shares client feedback."</p>
+        <p class="hm-rev-name">— Client Name, TBD</p>
+      </div>
+      <div class="hm-rev-card" data-review="2">
+        <span class="sv-card-tag">Pending</span>
+        <p class="hm-rev-quote">"Review quote to be added — pull a real one once Roman shares client feedback."</p>
+        <p class="hm-rev-name">— Client Name, TBD</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORY TEASER -->
+  <div class="hm-sect">
+    <div class="hm-story">
+      <div class="shot shot--port" data-photo="fig08"><div class="shot-tag">FIG. 08<small>Roman, studio portrait — photo TBD</small></div></div>
+      <div>
+        <p class="eyebrow">The Barber</p>
+        <h2 class="disp disp-lg" style="margin-bottom:1.2rem">From Ukraine to the Main Line</h2>
+        <p class="hm-story-p">Roman didn't start in a barbershop — he started on Instagram, with a clipper kit his wife gave him for his birthday. Within a few years he'd built his own shop in Ukraine. When he came to the U.S. as a refugee, he started over completely — and built it all again.</p>
+        <a class="btn-out" onclick="go('about')">Read the Full Story →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEDIA TEASER -->
+  <div class="hm-sect">
+    <div class="hm-sect-head">
+      <div>
+        <p class="eyebrow">On Camera</p>
+        <h2 class="disp disp-lg">Watch the Work</h2>
+      </div>
+      <p class="hm-sect-sub">Tutorials, live cuts, and reels — on Instagram, YouTube &amp; TikTok</p>
+    </div>
+    <div class="hm-reel-row">
+      <div class="shot shot--reel" data-video="reel01">
+        <div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        <div class="shot-tag">REEL 01<small>French Crop Tutorial — embed TBD</small></div>
+      </div>
+      <div class="shot shot--reel" data-video="reel02">
+        <div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        <div class="shot-tag">REEL 02<small>Skin Fade, Start to Finish — embed TBD</small></div>
+      </div>
+      <div class="shot shot--reel" data-video="reel03">
+        <div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+        <div class="shot-tag">REEL 03<small>Barber Live Session — embed TBD</small></div>
+      </div>
+    </div>
+    <a class="btn-out" onclick="go('media')">More on Media →</a>
+  </div>
+
+  <!-- COACHING SLIM BAND -->
+  <div class="hm-coach-band">
+    <div class="hm-coach-txt">
+      <span class="hm-coach-eye">Also Teaching</span>
+      <span class="hm-coach-p">Roman mentors barbers who want to get serious about the craft.</span>
+    </div>
+    <a class="btn-out" onclick="go('coaching')">Explore Coaching →</a>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="hm-final">
+    <h2 class="disp">Ready for a Fresh Cut?</h2>
+    <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book Your Appointment</a>
+  </div>
+
+  <footer>
+    <div class="f-brand">
+      <span class="f-logo">ZAB.</span>
+      <span class="f-motto">"I have your new style."</span>
+    </div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    </div>
+    <div class="f-meta">
+      <span class="f-status"></span>
+      <span class="f-copy">© 2026 Zab Hair Studio</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════
+     ABOUT PAGE
+════════════════════════════════ -->
+<div id="pg-about" class="pg">
+  <div class="shot ab-band" data-photo="fig09">
+    <div class="ab-band-footer">
+      <h1 class="ab-band-name">Roman<br>Zablotskyi</h1>
+    </div>
+    <div class="shot-tag">FIG. 09<small>Full-bleed portrait — photo TBD</small></div>
+  </div>
+
+  <div class="ab-body">
+    <div class="ab-portrait">
+      <div class="shot shot--port" data-photo="fig10"><div class="shot-tag">FIG. 10<small>Portrait — photo TBD</small></div></div>
+    </div>
+
+    <div class="ab-text">
+      <p class="ab-text-eyebrow">The Barber</p>
+      <span class="ab-ph-note">Draft — confirm exact wording with Roman</span>
+      <p>Roman didn't start in a barbershop. He started on Instagram, teaching himself technique one video at a time after his wife gave him a clipper kit for his birthday — back when he was still living in Ukraine. Within a few years, he'd opened his own shop there.</p>
+      <p>When Roman came to the U.S. as a refugee, he started over completely — new country, new clients, same standard. He's been cutting professionally for seven years now, every bit of it solo.</p>
+      <p>What sets his work apart: European-trained technique, a habit of finishing with shears instead of relying on clippers alone, and an eye for detail his 15,000+ clients keep coming back for — including professional athletes and touring musicians.</p>
+
+      <div class="ab-quote">
+        <p>"I have your new style."</p>
+        <span>— what Roman tells every client before he picks up the clippers</span>
+      </div>
+
+      <p>That same standard now shapes how he teaches. Former students from his shop in Ukraine are still cutting professionally today — and he's building out 1-on-1 mentorship for barbers here who want the same level taught right.</p>
+
+      <div class="ab-creds">
+        <div>
+          <div class="cred-lbl">Years Cutting</div>
+          <div class="cred-v">7</div>
+        </div>
+        <div>
+          <div class="cred-lbl">Clients Served</div>
+          <div class="cred-v">15,000+</div>
+        </div>
+        <div>
+          <div class="cred-lbl">Based In</div>
+          <div class="cred-v">Newtown Square, PA</div>
+          <div class="cred-n">Main Line Philadelphia</div>
+        </div>
+        <div>
+          <div class="cred-lbl">Off the Clock</div>
+          <div class="cred-v">Music &amp; Soccer</div>
+        </div>
+      </div>
+
+      <div class="ab-cta">
+        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book an Appointment</a>
+        <a class="btn-out" onclick="go('media')">Watch His Tutorials →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ab-grid-wrap">
+    <p class="eyebrow">Behind the Chair</p>
+    <div class="ab-grid">
+      <div class="shot shot--sq" data-photo="fig11"><div class="shot-tag">FIG. 11<small>In the studio — photo TBD</small></div></div>
+      <div class="shot shot--sq" data-photo="fig12"><div class="shot-tag">FIG. 12<small>Tools of the trade — photo TBD</small></div></div>
+      <div class="shot shot--sq" data-photo="fig13"><div class="shot-tag">FIG. 13<small>Mid-cut — photo TBD</small></div></div>
+      <div class="shot shot--sq" data-photo="fig14"><div class="shot-tag">FIG. 14<small>Finished look — photo TBD</small></div></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="f-brand">
+      <span class="f-logo">ZAB.</span>
+      <span class="f-motto">"I have your new style."</span>
+    </div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    </div>
+    <div class="f-meta">
+      <span class="f-status"></span>
+      <span class="f-copy">© 2026 Zab Hair Studio</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════
+     SERVICES PAGE (light)
+════════════════════════════════ -->
+<div id="pg-services" class="pg">
+  <div class="sv-head">
+    <div>
+      <p class="sv-head-eye">Newtown Square, PA</p>
+      <h1 class="disp disp-lg">Services</h1>
+    </div>
+    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+  </div>
+
+  <div class="sv-grid-wrap">
+    <div class="sv-grid">
+
+      <div>
+        <div class="shot shot--tall" data-photo="fig15"><div class="shot-tag">FIG. 15<small>Haircut — photo TBD</small></div></div>
+        <div class="sv-card-name">Haircut <span class="sv-card-tag">Signature</span></div>
+        <p class="sv-card-desc">Skin fades, tapers, French crops, side parts — whatever you want, cut with European-trained precision and finished with shears for texture clippers alone can't give you.</p>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+      </div>
+
+      <div>
+        <div class="shot shot--tall" data-photo="fig16"><div class="shot-tag">FIG. 16<small>Beard Trim — photo TBD</small></div></div>
+        <div class="sv-card-name">Beard Trim</div>
+        <p class="sv-card-desc">Sharp edges, even density, shaped to fit your face — no patchy spots left behind.</p>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+      </div>
+
+      <div>
+        <div class="shot shot--tall" data-photo="fig17"><div class="shot-tag">FIG. 17<small>Haircut + Beard — photo TBD</small></div></div>
+        <div class="sv-card-name">Haircut + Beard <span class="sv-card-tag">Most Popular</span></div>
+        <p class="sv-card-desc">The full reset — haircut and beard, dialed in together in one sitting.</p>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+      </div>
+
+      <div>
+        <div class="shot shot--tall" data-photo="fig18"><div class="shot-tag">FIG. 18<small>Hot Towel Shave — photo TBD</small></div></div>
+        <div class="sv-card-name">Hot Towel Shave</div>
+        <p class="sv-card-desc">A straight-razor shave finished with a hot towel — the old-school treatment most barbershops don't bother with anymore.</p>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+      </div>
+
+      <div class="sv-card--soon">
+        <div class="shot shot--tall" data-photo="fig19"><div class="shot-tag">FIG. 19<small>Facials — photo TBD</small></div></div>
+        <div class="sv-card-name">Facials <span class="sv-card-tag">Coming Soon</span></div>
+        <p class="sv-card-desc">Roman's expanding into facial treatments. Check back soon, or join the coaching waitlist to hear first.</p>
+        <div class="sv-card-foot"><span class="sv-soon">Coming Soon</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sv-foot">
+    <span class="sv-foot-note">Pricing &amp; booking details live on Square — tap Book to see current rates</span>
+    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank">Book via Square →</a>
+  </div>
+
+  <footer>
+    <div class="f-brand">
+      <span class="f-logo">ZAB.</span>
+      <span class="f-motto">"I have your new style."</span>
+    </div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    </div>
+    <div class="f-meta">
+      <span class="f-status"></span>
+      <span class="f-copy">© 2026 Zab Hair Studio</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════
+     COACHING PAGE
+════════════════════════════════ -->
+<div id="pg-coaching" class="pg">
+  <div class="co-intro">
+    <h1>Mentorship<br>&amp; Coaching</h1>
+    <p class="co-stmt">Roman doesn't just cut hair. He teaches it — with the same precision he brings to every client in the chair.</p>
+    <p style="font-family:var(--cnd);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ash);margin-top:1.6rem">Not new to this — former students from his shop in Ukraine are still cutting professionally today.</p>
+  </div>
+
+  <div class="co-hero-wrap">
+    <div class="shot shot--wide" data-photo="fig20"><div class="shot-tag">FIG. 20<small>Roman teaching a session — photo TBD</small></div></div>
+  </div>
+
+  <div class="co-offerings">
+    <div class="co-row">
+      <div class="co-num">01</div>
+      <div class="shot shot--sq" data-photo="fig21"><div class="shot-tag">FIG. 21<small>Foundations session — photo TBD</small></div></div>
+      <div>
+        <div class="co-item-eye">Foundation</div>
+        <h3 class="co-item-h">For Beginners</h3>
+        <p class="co-item-p">Just picking up clippers? Roman teaches the fundamentals the right way — technique, posture, pattern — so you don't spend years unlearning bad habits that cap your ceiling.</p>
+        <span class="co-ph-note">⟶ format &amp; pricing — to be confirmed with Roman</span>
+      </div>
+    </div>
+    <div class="co-row">
+      <div class="co-num">02</div>
+      <div class="shot shot--sq" data-photo="fig22"><div class="shot-tag">FIG. 22<small>1-on-1 coaching — photo TBD</small></div></div>
+      <div>
+        <div class="co-item-eye">Refinement</div>
+        <h3 class="co-item-h">For Working Barbers</h3>
+        <p class="co-item-p">Already in the chair but plateaued? Work directly with Roman on technique, consistency, and speed. He'll show you where the gaps are and how to close them.</p>
+        <span class="co-ph-note">⟶ format &amp; pricing — to be confirmed with Roman</span>
+      </div>
+    </div>
+    <div class="co-row">
+      <div class="co-num">03</div>
+      <div class="shot shot--sq" data-photo="fig23"><div class="shot-tag">FIG. 23<small>Filming the course — photo TBD</small></div></div>
+      <div>
+        <div class="co-item-eye">Coming Soon</div>
+        <h3 class="co-item-h">Online Course</h3>
+        <p class="co-item-p">Roman's building a full online course so anyone, anywhere, can learn his technique — not just barbers near Newtown Square. It's in the works. Get on the list to be the first to know when it's live.</p>
+        <div class="co-waitlist">
+          <input type="email" placeholder="you@email.com" disabled>
+          <button class="btn-fill" disabled>Join Waitlist</button>
+        </div>
+        <span class="co-ph-note">⟶ connect to an email list (e.g. Mailchimp) once ready</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="co-test-wrap">
+    <p class="eyebrow">From a Mentee</p>
+    <div class="co-test-card" data-testimonial>
+      <p class="co-test-q">"Mentee testimonial to be added once Roman has a coaching client willing to share feedback."</p>
+      <p class="co-test-n">— Barber Name, TBD</p>
+    </div>
+  </div>
+
+  <div class="co-cta-band">
+    <p>Ready to get to work?</p>
+    <a class="btn-fill" id="contact-cta" href="mailto:">Get in Touch</a>
+  </div>
+
+  <footer>
+    <div class="f-brand">
+      <span class="f-logo">ZAB.</span>
+      <span class="f-motto">"I have your new style."</span>
+    </div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    </div>
+    <div class="f-meta">
+      <span class="f-status"></span>
+      <span class="f-copy">© 2026 Zab Hair Studio</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ════════════════════════════════
+     MEDIA PAGE
+════════════════════════════════ -->
+<div id="pg-media" class="pg">
+  <div class="md-head">
+    <p class="md-head-eye eyebrow">Watch &amp; Follow</p>
+    <h1>On Camera</h1>
+  </div>
+
+  <div class="md-feat">
+    <div class="shot shot--land" data-video="clip01">
+      <div class="play-ring"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+      <div class="shot-tag">CLIP 01<small>Featured video — embed TBD</small></div>
+    </div>
+    <p class="md-feat-cap" data-video-caption="clip01">Pinned: "The Most Popular Haircut in 30 Minutes — French Crop with Taper"</p>
+  </div>
+
+  <div class="md-grid">
+    <div>
+      <a class="md-col-eye" href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube — @Zab_barber1994</a>
+      <ul class="yt-list">
+        <li class="yt-item">
+          <div class="shot yt-thumb" data-video="clip01"><div class="shot-tag" style="padding:.4rem .5rem;font-size:.5rem">CLIP 01</div></div>
+          <span class="yt-title" data-video-caption="clip01">The Most Popular Haircut in 30 Minutes — French Crop with Taper</span>
+        </li>
+        <li class="yt-item">
+          <div class="shot yt-thumb" data-video="clip02"><div class="shot-tag" style="padding:.4rem .5rem;font-size:.5rem">CLIP 02</div></div>
+          <span class="yt-title" data-video-caption="clip02">Barber Live! — Real-Time Cutting Session</span>
+        </li>
+        <li class="yt-item">
+          <div class="shot yt-thumb" data-video="clip03"><div class="shot-tag" style="padding:.4rem .5rem;font-size:.5rem">CLIP 03</div></div>
+          <span class="yt-title" data-video-caption="clip03">⟶ Additional video — to be selected with Roman</span>
+        </li>
+        <li class="yt-item">
+          <div class="shot yt-thumb" data-video="clip04"><div class="shot-tag" style="padding:.4rem .5rem;font-size:.5rem">CLIP 04</div></div>
+          <span class="yt-title" data-video-caption="clip04">⟶ Additional video — to be selected with Roman</span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <a class="md-col-eye" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram Reels — @zab_barber</a>
+      <p style="font-family:var(--cnd);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ash);margin:-.8rem 0 1.2rem">4,274 followers</p>
+      <!--
+        Reels below pull automatically from content.js — just paste
+        the Instagram Reel link into CONTENT.videos.reel01 / reel02 /
+        reel03 / reel04 in content.js and it'll embed itself here.
+        No need to touch this file.
+      -->
+      <div class="reel-grid">
+        <div>
+          <div class="shot shot--reel" data-video="reel01"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">REEL 01<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="reel01">French Crop Tutorial</p>
+        </div>
+        <div>
+          <div class="shot shot--reel" data-video="reel02"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">REEL 02<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="reel02">Skin Fade, Start to Finish</p>
+        </div>
+        <div>
+          <div class="shot shot--reel" data-video="reel03"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">REEL 03<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="reel03">Barber Live Session</p>
+        </div>
+        <div>
+          <div class="shot shot--reel" data-video="reel04"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">REEL 04<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="reel04">⟶ To be selected with Roman</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <a class="md-col-eye" href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok — @barber_zab</a>
+      <!--
+        Same idea as the Reels column — paste TikTok links into
+        CONTENT.videos.tt01 / tt02 in content.js. No embedding by
+        hand needed.
+      -->
+      <div class="reel-grid">
+        <div>
+          <div class="shot shot--reel" data-video="tt01"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">TT 01<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="tt01">⟶ To be selected with Roman</p>
+        </div>
+        <div>
+          <div class="shot shot--reel" data-video="tt02"><div class="play-ring play-ring--sm"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="shot-tag">TT 02<small>Embed TBD</small></div></div>
+          <p class="reel-cap" data-video-caption="tt02">⟶ To be selected with Roman</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="md-feed">
+    <p class="md-col-eye">Instagram Feed — @zab_barber</p>
+    <div class="ig-grid">
+      <a class="ig-cell" data-igfeed="0" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a><a class="ig-cell" data-igfeed="1" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a><a class="ig-cell" data-igfeed="2" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a>
+      <a class="ig-cell" data-igfeed="3" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a><a class="ig-cell" data-igfeed="4" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a><a class="ig-cell" data-igfeed="5" href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer" aria-label="View on Instagram"></a>
+    </div>
+    <p class="ig-note">⟶ live feed or curated posts — to be confirmed</p>
+  </div>
+
+  <div class="md-soc">
+    <a href="https://www.instagram.com/zab_barber/" target="_blank">@zab_barber</a>
+    <a href="https://www.instagram.com/zab_hair_studio/" target="_blank">@zab_hair_studio</a>
+    <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+    <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    <a href="https://www.facebook.com/roman.zablotskyi.2025/" target="_blank">Facebook</a>
+  </div>
+
+  <footer>
+    <div class="f-brand">
+      <span class="f-logo">ZAB.</span>
+      <span class="f-motto">"I have your new style."</span>
+    </div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+    </div>
+    <div class="f-meta">
+      <span class="f-status"></span>
+      <span class="f-copy">© 2026 Zab Hair Studio</span>
+    </div>
+  </footer>
+</div>
+
+<button class="stt" id="stt" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
