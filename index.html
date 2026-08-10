@@ -3,37 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zab Hair Studio — Roman Zablotskyi</title>
+<title>Zab Hair Studio — Barber in Newtown Square, PA</title>
+<meta name="description" content="Precision fades, tapers, and beard work by Roman Zablotskyi at Zab Hair Studio, 4885 West Chester Pike, Newtown Square, PA. European-trained, shear-first technique. Book online.">
+<meta property="og:title" content="Zab Hair Studio — Roman Zablotskyi">
+<meta property="og:description" content="Precision fades, tapers, and beard work on the Main Line. Newtown Square, PA.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/fig01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0d0d'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='60' font-weight='900' fill='%23de5a2c' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Zab Hair Studio",
+  "image": "images/fig01.jpg",
+  "url": "https://zabhairstudio.com",
+  "telephone": "",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4885 West Chester Pike, Suite 120",
+    "addressLocality": "Newtown Square",
+    "addressRegion": "PA",
+    "postalCode": "19073",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/zab_barber/",
+    "https://www.youtube.com/@Zab_barber1994",
+    "https://www.tiktok.com/@barber_zab",
+    "https://www.facebook.com/roman.zablotskyi.2025/"
+  ]
+}
+</script>
 </head>
 <body>
+
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <!-- ── NAV ── -->
 <nav id="navbar">
   <a class="nav-logo" onclick="go('home')">ZAB<span class="dot">.</span></a>
   <div class="nav-c">
-    <a class="nav-link on" data-page="home" onclick="go('home')">Home</a>
-    <a class="nav-link" data-page="about" onclick="go('about')">About</a>
-    <a class="nav-link" data-page="services" onclick="go('services')">Services</a>
-    <a class="nav-link" data-page="coaching" onclick="go('coaching')">Coaching</a>
-    <a class="nav-link" data-page="media" onclick="go('media')">Media</a>
-    <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+    <a class="nav-link on" href="#home" data-page="home" onclick="go('home')">Home</a>
+    <a class="nav-link" href="#about" data-page="about" onclick="go('about')">About</a>
+    <a class="nav-link" href="#services" data-page="services" onclick="go('services')">Services</a>
+    <a class="nav-link" href="#coaching" data-page="coaching" onclick="go('coaching')">Coaching</a>
+    <a class="nav-link" href="#media" data-page="media" onclick="go('media')">Media</a>
+    <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book Now</a>
   </div>
-  <button class="burger" id="burg" aria-label="Menu"><span></span><span></span><span></span></button>
+  <button class="burger" id="burg" aria-label="Menu" aria-expanded="false" aria-controls="navmob">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <div class="nav-mob" id="navmob">
-  <a class="nav-link" data-page="home" onclick="go('home');closeMob()">Home</a>
-  <a class="nav-link" data-page="about" onclick="go('about');closeMob()">About</a>
-  <a class="nav-link" data-page="services" onclick="go('services');closeMob()">Services</a>
-  <a class="nav-link" data-page="coaching" onclick="go('coaching');closeMob()">Coaching</a>
-  <a class="nav-link" data-page="media" onclick="go('media');closeMob()">Media</a>
-  <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+  <a class="nav-link" href="#home" data-page="home" onclick="go('home');closeMob()">Home</a>
+  <a class="nav-link" href="#about" data-page="about" onclick="go('about');closeMob()">About</a>
+  <a class="nav-link" href="#services" data-page="services" onclick="go('services');closeMob()">Services</a>
+  <a class="nav-link" href="#coaching" data-page="coaching" onclick="go('coaching');closeMob()">Coaching</a>
+  <a class="nav-link" href="#media" data-page="media" onclick="go('media');closeMob()">Media</a>
+  <a class="nav-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book Now</a>
 </div>
 
+<main id="main-content" tabindex="-1">
 <!-- ════════════════════════════════
      HOME PAGE
 ════════════════════════════════ -->
@@ -46,7 +87,7 @@
       <h1 class="hm-headline">Sharp.<br>Every Time.</h1>
       <p class="hm-sub">Precision fades, clean tapers, and beard work done right — by a barber who treats every cut like it's the only one that matters.</p>
       <div class="hm-ctas">
-        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book a Cut</a>
+        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book a Cut</a>
         <button class="btn-out" onclick="scrollToWork()">See the Work</button>
       </div>
     </div>
@@ -220,10 +261,34 @@
     <a class="btn-out" onclick="go('coaching')">Explore Coaching →</a>
   </div>
 
+  <!-- VISIT THE STUDIO -->
+  <div class="hm-sect hm-visit" id="visit">
+    <div class="hm-sect-head">
+      <div>
+        <p class="eyebrow">Find Us</p>
+        <h2 class="disp disp-lg">Visit the Studio</h2>
+      </div>
+      <p class="hm-sect-sub">One chair, right on West Chester Pike — easy to find, easy to park.</p>
+    </div>
+    <div class="hm-visit-grid">
+      <div class="hm-visit-info">
+        <address class="hm-visit-addr" data-address></address>
+        <p class="hm-visit-hours" data-hours-list></p>
+        <div class="hm-visit-ctas">
+          <a class="btn-fill" data-directions-link href="#" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          <a class="btn-out" data-phone-link href="#" style="display:none">Call the Studio</a>
+        </div>
+      </div>
+      <div class="hm-visit-map">
+        <iframe data-map-embed title="Zab Hair Studio location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0;width:100%;height:100%"></iframe>
+      </div>
+    </div>
+  </div>
+
   <!-- FINAL CTA -->
   <div class="hm-final">
     <h2 class="disp">Ready for a Fresh Cut?</h2>
-    <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book Your Appointment</a>
+    <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book Your Appointment</a>
   </div>
 
   <footer>
@@ -231,10 +296,13 @@
       <span class="f-logo">ZAB.</span>
       <span class="f-motto">"I have your new style."</span>
     </div>
+    <div class="f-addr-wrap">
+      <a class="f-addr" data-directions-link href="#" target="_blank" rel="noopener noreferrer" data-address-inline></a>
+    </div>
     <div class="f-links">
-      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <div class="f-meta">
       <span class="f-status"></span>
@@ -256,22 +324,34 @@
 
   <div class="ab-body">
     <div class="ab-portrait">
-      <div class="shot shot--port" data-photo="fig10"><div class="shot-tag">FIG. 10<small>Portrait — photo TBD</small></div></div>
+      <div class="ab-portrait-stack">
+        <div class="shot shot--port ab-portrait-img on" data-scene-img="fig10" data-photo="fig10"><div class="shot-tag">FIG. 10<small>Portrait — photo TBD</small></div></div>
+        <div class="shot shot--port ab-portrait-img" data-scene-img="fig11" data-photo="fig11"><div class="shot-tag">FIG. 11<small>In the studio — photo TBD</small></div></div>
+        <div class="shot shot--port ab-portrait-img" data-scene-img="fig12" data-photo="fig12"><div class="shot-tag">FIG. 12<small>Mid-cut — photo TBD</small></div></div>
+      </div>
     </div>
 
     <div class="ab-text">
       <p class="ab-text-eyebrow">The Barber</p>
       <span class="ab-ph-note">Draft — confirm exact wording with Roman</span>
-      <p>Roman didn't start in a barbershop. He started on Instagram, teaching himself technique one video at a time after his wife gave him a clipper kit for his birthday — back when he was still living in Ukraine. Within a few years, he'd opened his own shop there.</p>
-      <p>When Roman came to the U.S. as a refugee, he started over completely — new country, new clients, same standard. He's been cutting professionally for seven years now, every bit of it solo.</p>
-      <p>What sets his work apart: European-trained technique, a habit of finishing with shears instead of relying on clippers alone, and an eye for detail his 15,000+ clients keep coming back for — including professional athletes and touring musicians.</p>
 
-      <div class="ab-quote">
-        <p>"I have your new style."</p>
-        <span>— what Roman tells every client before he picks up the clippers</span>
+      <div class="ab-scene" data-scene="fig10">
+        <p>Roman didn't start in a barbershop. He started on Instagram, teaching himself technique one video at a time after his wife gave him a clipper kit for his birthday — back when he was still living in Ukraine. Within a few years, he'd opened his own shop there.</p>
+        <p>When Roman came to the U.S. as a refugee, he started over completely — new country, new clients, same standard. He's been cutting professionally for seven years now, every bit of it solo.</p>
       </div>
 
-      <p>That same standard now shapes how he teaches. Former students from his shop in Ukraine are still cutting professionally today — and he's building out 1-on-1 mentorship for barbers here who want the same level taught right.</p>
+      <div class="ab-scene" data-scene="fig11">
+        <p>What sets his work apart: European-trained technique, a habit of finishing with shears instead of relying on clippers alone, and an eye for detail his 15,000+ clients keep coming back for — including professional athletes and touring musicians.</p>
+
+        <div class="ab-quote">
+          <p>"I have your new style."</p>
+          <span>— what Roman tells every client before he picks up the clippers</span>
+        </div>
+      </div>
+
+      <div class="ab-scene" data-scene="fig12">
+        <p>That same standard now shapes how he teaches. Former students from his shop in Ukraine are still cutting professionally today — and he's building out 1-on-1 mentorship for barbers here who want the same level taught right.</p>
+      </div>
 
       <div class="ab-creds">
         <div>
@@ -294,7 +374,7 @@
       </div>
 
       <div class="ab-cta">
-        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank">Book an Appointment</a>
+        <a class="btn-fill" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book an Appointment</a>
         <a class="btn-out" onclick="go('media')">Watch His Tutorials →</a>
       </div>
     </div>
@@ -315,10 +395,13 @@
       <span class="f-logo">ZAB.</span>
       <span class="f-motto">"I have your new style."</span>
     </div>
+    <div class="f-addr-wrap">
+      <a class="f-addr" data-directions-link href="#" target="_blank" rel="noopener noreferrer" data-address-inline></a>
+    </div>
     <div class="f-links">
-      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <div class="f-meta">
       <span class="f-status"></span>
@@ -336,7 +419,7 @@
       <p class="sv-head-eye">Newtown Square, PA</p>
       <h1 class="disp disp-lg">Services</h1>
     </div>
-    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank">Book Now</a>
+    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book Now</a>
   </div>
 
   <div class="sv-grid-wrap">
@@ -346,28 +429,28 @@
         <div class="shot shot--tall" data-photo="fig15"><div class="shot-tag">FIG. 15<small>Haircut — photo TBD</small></div></div>
         <div class="sv-card-name">Haircut <span class="sv-card-tag">Signature</span></div>
         <p class="sv-card-desc">Skin fades, tapers, French crops, side parts — whatever you want, cut with European-trained precision and finished with shears for texture clippers alone can't give you.</p>
-        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book →</a></div>
       </div>
 
       <div>
         <div class="shot shot--tall" data-photo="fig16"><div class="shot-tag">FIG. 16<small>Beard Trim — photo TBD</small></div></div>
         <div class="sv-card-name">Beard Trim</div>
         <p class="sv-card-desc">Sharp edges, even density, shaped to fit your face — no patchy spots left behind.</p>
-        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book →</a></div>
       </div>
 
       <div>
         <div class="shot shot--tall" data-photo="fig17"><div class="shot-tag">FIG. 17<small>Haircut + Beard — photo TBD</small></div></div>
         <div class="sv-card-name">Haircut + Beard <span class="sv-card-tag">Most Popular</span></div>
         <p class="sv-card-desc">The full reset — haircut and beard, dialed in together in one sitting.</p>
-        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book →</a></div>
       </div>
 
       <div>
         <div class="shot shot--tall" data-photo="fig18"><div class="shot-tag">FIG. 18<small>Hot Towel Shave — photo TBD</small></div></div>
         <div class="sv-card-name">Hot Towel Shave</div>
         <p class="sv-card-desc">A straight-razor shave finished with a hot towel — the old-school treatment most barbershops don't bother with anymore.</p>
-        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank">Book →</a></div>
+        <div class="sv-card-foot"><a class="sv-bk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book →</a></div>
       </div>
 
       <div class="sv-card--soon">
@@ -382,7 +465,7 @@
 
   <div class="sv-foot">
     <span class="sv-foot-note">Pricing &amp; booking details live on Square — tap Book to see current rates</span>
-    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank">Book via Square →</a>
+    <a class="btn-dk" href="https://zab-hair-studio.square.site/" target="_blank" rel="noopener noreferrer">Book via Square →</a>
   </div>
 
   <footer>
@@ -390,10 +473,13 @@
       <span class="f-logo">ZAB.</span>
       <span class="f-motto">"I have your new style."</span>
     </div>
+    <div class="f-addr-wrap">
+      <a class="f-addr" data-directions-link href="#" target="_blank" rel="noopener noreferrer" data-address-inline></a>
+    </div>
     <div class="f-links">
-      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <div class="f-meta">
       <span class="f-status"></span>
@@ -422,7 +508,7 @@
       <div class="shot shot--sq" data-photo="fig21"><div class="shot-tag">FIG. 21<small>Foundations session — photo TBD</small></div></div>
       <div>
         <div class="co-item-eye">Foundation</div>
-        <h3 class="co-item-h">For Beginners</h3>
+        <h2 class="co-item-h">For Beginners</h2>
         <p class="co-item-p">Just picking up clippers? Roman teaches the fundamentals the right way — technique, posture, pattern — so you don't spend years unlearning bad habits that cap your ceiling.</p>
         <span class="co-ph-note">⟶ format &amp; pricing — to be confirmed with Roman</span>
       </div>
@@ -432,7 +518,7 @@
       <div class="shot shot--sq" data-photo="fig22"><div class="shot-tag">FIG. 22<small>1-on-1 coaching — photo TBD</small></div></div>
       <div>
         <div class="co-item-eye">Refinement</div>
-        <h3 class="co-item-h">For Working Barbers</h3>
+        <h2 class="co-item-h">For Working Barbers</h2>
         <p class="co-item-p">Already in the chair but plateaued? Work directly with Roman on technique, consistency, and speed. He'll show you where the gaps are and how to close them.</p>
         <span class="co-ph-note">⟶ format &amp; pricing — to be confirmed with Roman</span>
       </div>
@@ -442,10 +528,11 @@
       <div class="shot shot--sq" data-photo="fig23"><div class="shot-tag">FIG. 23<small>Filming the course — photo TBD</small></div></div>
       <div>
         <div class="co-item-eye">Coming Soon</div>
-        <h3 class="co-item-h">Online Course</h3>
+        <h2 class="co-item-h">Online Course</h2>
         <p class="co-item-p">Roman's building a full online course so anyone, anywhere, can learn his technique — not just barbers near Newtown Square. It's in the works. Get on the list to be the first to know when it's live.</p>
         <div class="co-waitlist">
-          <input type="email" placeholder="you@email.com" disabled>
+          <label class="co-waitlist-lbl" for="co-waitlist-email">Email address</label>
+          <input id="co-waitlist-email" type="email" placeholder="you@email.com" disabled>
           <button class="btn-fill" disabled>Join Waitlist</button>
         </div>
         <span class="co-ph-note">⟶ connect to an email list (e.g. Mailchimp) once ready</span>
@@ -471,10 +558,13 @@
       <span class="f-logo">ZAB.</span>
       <span class="f-motto">"I have your new style."</span>
     </div>
+    <div class="f-addr-wrap">
+      <a class="f-addr" data-directions-link href="#" target="_blank" rel="noopener noreferrer" data-address-inline></a>
+    </div>
     <div class="f-links">
-      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <div class="f-meta">
       <span class="f-status"></span>
@@ -580,11 +670,11 @@
   </div>
 
   <div class="md-soc">
-    <a href="https://www.instagram.com/zab_barber/" target="_blank">@zab_barber</a>
-    <a href="https://www.instagram.com/zab_hair_studio/" target="_blank">@zab_hair_studio</a>
-    <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-    <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
-    <a href="https://www.facebook.com/roman.zablotskyi.2025/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">@zab_barber</a>
+    <a href="https://www.instagram.com/zab_hair_studio/" target="_blank" rel="noopener noreferrer">@zab_hair_studio</a>
+    <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+    <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
+    <a href="https://www.facebook.com/roman.zablotskyi.2025/" target="_blank" rel="noopener noreferrer">Facebook</a>
   </div>
 
   <footer>
@@ -592,10 +682,13 @@
       <span class="f-logo">ZAB.</span>
       <span class="f-motto">"I have your new style."</span>
     </div>
+    <div class="f-addr-wrap">
+      <a class="f-addr" data-directions-link href="#" target="_blank" rel="noopener noreferrer" data-address-inline></a>
+    </div>
     <div class="f-links">
-      <a href="https://www.instagram.com/zab_barber/" target="_blank">Instagram</a>
-      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank">YouTube</a>
-      <a href="https://www.tiktok.com/@barber_zab" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/zab_barber/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@Zab_barber1994" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://www.tiktok.com/@barber_zab" target="_blank" rel="noopener noreferrer">TikTok</a>
     </div>
     <div class="f-meta">
       <span class="f-status"></span>
@@ -603,6 +696,7 @@
     </div>
   </footer>
 </div>
+</main>
 
 <button class="stt" id="stt" aria-label="Back to top">
   <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>

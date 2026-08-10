@@ -35,11 +35,39 @@
 
 const CONTENT = {
 
-  // ── CONTACT LINK ─────────────────────────────────────────
+  // ── HERO VIDEO (optional) ────────────────────────────────
+  // Leave "video" blank to keep using the FIG. 01 photo above as
+  // the hero. If you get a short clip (10–15s, muted, looping —
+  // clippers running, a first snip, whatever) drop it in the
+  // images folder and type the filename here, same rule as photos:
+  // a filename resolves inside images/, or paste a full "https://"
+  // link to use it as-is. It autoplays muted/looped/silently and
+  // falls back to the FIG. 01 photo automatically if left blank,
+  // if it fails to load, or if the visitor has "reduce motion"
+  // turned on in their system settings.
+  hero: {
+    video: "", // e.g. "hero-loop.mp4"
+  },
+
+  // ── CONTACT & LOCATION ───────────────────────────────────
   links: {
     // Powers the "Get in Touch" button at the bottom of the
     // Coaching page. Leave blank to leave it unlinked for now.
     contactEmail: "", // e.g. "roman@zabhairstudio.com"
+
+    // Powers the "Call the Studio" links in the footer and the
+    // Visit section. Leave blank to hide those links.
+    phone: "", // e.g. "(610) 555-0123"
+
+    // Studio address — shown in the footer, the Visit section on
+    // the Home page, the "Get Directions" button, and the embedded
+    // map. This also feeds the site's LocalBusiness search-engine
+    // listing data, so keep it accurate.
+    addressLine1: "4885 West Chester Pike",
+    addressLine2: "Suite 120",
+    city: "Newtown Square",
+    state: "PA",
+    zip: "19073",
   },
 
   // ── STUDIO HOURS ─────────────────────────────────────────
